@@ -1,6 +1,6 @@
 <script>
-  import * as api from '../../lib/configApi.js';
-  import { showToast } from '../../lib/toastStore.js';
+  import * as api from '../../../lib/configApi.js';
+  import { showToast } from '../../../lib/toastStore.js';
 
   let domain = $state('');
   let appName = $state('');

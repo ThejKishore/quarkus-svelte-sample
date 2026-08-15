@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
-  import * as api from '../../lib/configApi.js';
-  import { showToast } from '../../lib/toastStore.js';
+  import * as api from '../../../lib/configApi.js';
+  import { showToast } from '../../../lib/toastStore.js';
 
   let domains = $state([]);
   let apps = $state([]);

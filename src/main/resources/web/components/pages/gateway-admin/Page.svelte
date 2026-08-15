@@ -1,9 +1,9 @@
 <script>
   import { onMount } from 'svelte';
-  import * as api from '../../lib/gatewayApi.js';
-  import { showToast } from '../../lib/toastStore.js';
-  import RouteFormModal from '../route-form-modal/RouteFormModal.svelte';
-  import AuditLogsModal from '../audit-logs-modal/AuditLogsModal.svelte';
+  import * as api from '../../../lib/gatewayApi.js';
+  import { showToast } from '../../../lib/toastStore.js';
+  import RouteFormModal from './RouteFormModal.svelte';
+  import AuditLogsModal from './AuditLogsModal.svelte';
 
   let allRoutes = $state([]);
   let displayedRoutes = $state([]);

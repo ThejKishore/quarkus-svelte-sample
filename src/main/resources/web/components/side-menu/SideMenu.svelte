@@ -2,8 +2,11 @@
   const { activeView, onSelect } = $props();
 
   const navItems = [
-    { id: 'gateway', icon: 'fas fa-route',    label: 'Gateway Admin UI' },
-    { id: 'config',  icon: 'fas fa-cogs',     label: 'Config Server UI' },
+    { id: 'gateway',       icon: 'fas fa-route',   label: 'Gateway Admin UI' },
+    { id: 'config',        icon: 'fas fa-cogs',    label: 'Config Server UI' },
+    { id: 'redis',         icon: 'fas fa-database',label: 'Redis Management' },
+    { id: 'blob',          icon: 'fas fa-cloud',   label: 'Blob Storage Management' },
+    { id: 'table-storage', icon: 'fas fa-table',   label: 'Table Storage Management' },
   ];
 </script>
 

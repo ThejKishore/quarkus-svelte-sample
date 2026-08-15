@@ -1,15 +1,12 @@
 <script>
-  import { onMount } from 'svelte';
-  import * as api from '../../lib/configApi.js';
-  import { showToast } from '../../lib/toastStore.js';
-  import ConfigManagement from '../config-management/ConfigManagement.svelte';
-  import ServiceOnboarding from '../service-onboarding/ServiceOnboarding.svelte';
-  import ConfigAuditHistory from '../config-audit-history/ConfigAuditHistory.svelte';
+  import ManagementTab from './ManagementTab.svelte';
+  import OnboardingTab from './OnboardingTab.svelte';
+  import AuditHistoryTab from './AuditHistoryTab.svelte';
 
   const tabs = [
-    { icon: 'fas fa-sliders-h',   label: 'Configuration', component: ConfigManagement },
-    { icon: 'fas fa-plus-circle', label: 'Onboarding',    component: ServiceOnboarding },
-    { icon: 'fas fa-history',     label: 'Audit History', component: ConfigAuditHistory },
+    { icon: 'fas fa-sliders-h',   label: 'Configuration', component: ManagementTab },
+    { icon: 'fas fa-plus-circle', label: 'Onboarding',    component: OnboardingTab },
+    { icon: 'fas fa-history',     label: 'Audit History', component: AuditHistoryTab },
   ];
 
   let activeTab = $state(0);

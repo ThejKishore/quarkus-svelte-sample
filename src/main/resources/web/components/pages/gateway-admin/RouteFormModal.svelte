@@ -1,6 +1,6 @@
 <script>
-  import * as api from '../../lib/gatewayApi.js';
-  import { showToast } from '../../lib/toastStore.js';
+  import * as api from '../../../lib/gatewayApi.js';
+  import { showToast } from '../../../lib/toastStore.js';
 
   const { mode = 'create', route = null, onclose, onsave } = $props();
 
